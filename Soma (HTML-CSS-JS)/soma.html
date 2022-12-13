@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <style>
+        div#res{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(60, 199, 153);
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 10px;
+            border-radius: 0.2cm;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+<input type="number" name="txtn1" id="txtn1"> + <!--Cria uma caixa para receber valores e recebe o id de txtn1-->
+<input type="number" name="txtn2" id="txtn2">   <!--Cria uma caixa para receber valores e recebe o id de txtn2-->
+<input type="button" value="Somar" onclick="somar()"> <!--Cria um botão somar com o evento click habilitado-->
+<div id="res">Resultado</div> <!--Cria uma div para o resultado-->
+<script>
+    function somar(){ /*Cria a função soma que será acionada ao clicar no botão somar*/
+    var tn1 = window.document.getElementById('txtn1')/* Variável tn1 receberá o valor digitado em txtn1*/
+    var tn2 = window.document.getElementById('txtn2')/* Variável tn2 receberá o valor digitado em txtn2*/
+    var Res = window.document.getElementById('res') /*Variável Res receberá o valor contido na div res*/
+    var n1 = Number(tn1.value) /* n1 recebe o valor de tn1 e coverte para number*/
+    var n2 = Number(tn2.value) /* n2 recebe o valor de tn2 e coverte para number*/
+    var s = n1 + n2 /* Variável s recebe a soma de n1 + n2 */
+    res.innerHTML = s /* Res será alterado para receber o HTML de s*/
+}
+
+</script>
+</body>
+</html>

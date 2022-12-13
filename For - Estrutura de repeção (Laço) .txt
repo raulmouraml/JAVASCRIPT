@@ -1,0 +1,8 @@
+For - Estrutura de repeção (Laço) 
+For = Para
+Atribui um valor a uma variável, executa o teste lógico e enquanto o teste lógico fo verdadeiro 
+faça o encremento ou demento da variável.  
+
+for(c=1;c<=100;c++){ /* C recebe o valor de c for <=4 adicione mais 1 a c*/
+    console.log(c)/* Imprime valor de c*/
+}

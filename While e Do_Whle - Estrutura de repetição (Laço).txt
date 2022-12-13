@@ -1,0 +1,25 @@
+Estrutura de repetição (Laço)
+
+While = Enquanto
+Enquanto a condição for verdadeiras repita o processo.
+O teste lógico(validação) é feito no início da função.
+
+Exemplo:
+var c = 1                    /* Variável c recebe o valor 1*/
+while (c <= 6){              /* Enquanto c for menor ou igual á 6*/
+console.log(`Tudo bem ${c}`) /* Imprima "Tudo bem" e o valor de C*/
+c++                          /* Adicione mais 1 ao valor de C*/
+}
+
+---------------------------------------------------------------------------------
+
+Do While = Faça - Enquanto
+Faça o processo enquanto a condição for verdadeiras.
+O teste lógico(validação) é feito no final da função.
+
+Exemplo:
+var c = 1                    /* Variável C recebe valor 1*/
+do{                          /* Faça*/ 
+console.log(`Contador ${c}`) /* Imprima na tela "Contador" e valor de "C"*/
+c++                          /* Adicione mais 1 a "C"*/
+} while (c<=6)               /* Enquanto "C" for >= 6 volte para o Do*/

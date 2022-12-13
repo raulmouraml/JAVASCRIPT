@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-size: 18px;
+        }
+
+        div#area{
+            width: 200px;
+            height: 200px;
+            background:rgb(153, 153, 223);
+            margin: 10px;
+            text-align: center;
+            line-height: 20px;
+        }
+        div#teste2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: black;
+            width: 200px;
+            height: 200px;
+            color: aliceblue;
+            text-align: center;
+            line-height: 200px;
+        }
+       
+
+        
+    </style>
+</head>
+<body>
+ 
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong> em java script</p>
+    <P>Aqui vai o resultado</P>
+    <div id="msg">
+    Click em mim
+    </div>
+    <script>
+        var corpo = Window.document.body
+        var p = window.document.getElementsByTagName('P')[0]
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'     
+    </script>
+
+
+<div id="area" onclick="teste()"> <!-- Criado uma div com id "area" e ao clicar na div chamar a função teste-->
+    <STRONG>Interaja...</STRONG> 
+ </div>
+ <script>
+function teste(){ /*Criado a função "teste"*/
+    var a= window.document.getElementById('area') /*A variável a recebe os elementos que estão no id 'area'*/
+    a.innerText=  'Clicou!'/*inserir o texto 'Clicou' na variável a*/
+}
+ </script>
+
+ 
+
+ <div id="teste2" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+<strong>Qual é o teste?</strong>
+ </div>
+ <script>
+    var a = window.document.getElementById('teste2')
+    function clicar(){ a.innerText = 'Teste 2'}          
+    function entrar(){a.innerText = 'Entrou'}  
+    function sair(){a.innerText = 'Saiu'}  
+ </script>
+
+
+</body>
+</html>
